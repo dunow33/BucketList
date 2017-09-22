@@ -1,9 +1,13 @@
-const SELECT_BAND = 'SELECT_BAND';
+import axios from 'axios';
 
-export function selectBand(band) {
-	console.log("You have selected:", band.name);
+export const CREATE_POSTS = 'CREATE_POSTS';
+
+const ROOT_URL = 'http://rest.learncode.academy/api/brian';
+
+export function createPost(props) {
+	const request = axios.post(`${ROOT_URL}/posts`, props);						
 	return {
-		type: SELECT_BAND,
-		payload: band
+		type: CREATE_POSTS,
+		payload: request
 	};
 }
