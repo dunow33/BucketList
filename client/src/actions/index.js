@@ -26,6 +26,11 @@ export function signinUser({ email, password }){
 	}
 }
 
+export function signoutUser(){
+   localStorage.removeItem('token'); 
+   return {type: UNAUTH_USER};
+}
+
 export function authError(error) {
   return {
     type: AUTH_ERROR,
@@ -34,7 +39,7 @@ export function authError(error) {
 }
 
 export function createPost(props) {
-	const request = axios.post(`${ROOT_URL}/posts`, props);						
+	const request = axios.post('${ROOT_URL}/posts', props);						
 	return {
 		type: CREATE_POSTS,
 		payload: request
