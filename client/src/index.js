@@ -30,7 +30,7 @@ ReactDOM.render(
 		<Router history={browserHistory}>
   			<Route path="/" component={App}>
   			  	<Route path="signin" component={Signin} />
-    				<Route path="signout" component={Signout} />
+    			<Route path="signout" component={Signout} />
   	   			<Route path="signup" component={Signup} />
   			  	<Route path="newitem" component={RequireAuth(ListItem)} />
   			</Route>
