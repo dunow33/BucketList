@@ -59,7 +59,7 @@ const ROOT_URL = 'http://localhost:3000';
               type: CREATE_POSTS,
               payload: request
             })
-          browserHistory.push('/newitem');
+          browserHistory.push('/items');
         });
       }
     }
