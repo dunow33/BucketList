@@ -1,27 +1,27 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-var BucketListSchema = new Schema({
+let BucketListSchma = new Schema({
 	title: {
 		type: String,
-		default: ''
+		default: ""
 	},
 	topic: {
 		type: String,
-		default: ''
+		default: ""
 	},
 	url: {
 		type: String,
-		default: ''
+		default: ""
 	},
 	content: {
 		type: String,
-		default: ''
+		default: ""
 	},
 	specificUser: {
 		type: String,
-		default: ''
+		default: ""
 	}
 });
 
-module.exports = mongoose.model('BucketList', BucketListSchema);
+module.exports = mongoose.model('BucketList', BucketListSchma);
