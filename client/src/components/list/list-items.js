@@ -10,7 +10,7 @@ const config = {
    headers: { authorization: localStorage.getItem('token') }
 }
 
-class ListShow extends Component {
+class ListItems extends Component {
 
 	constructor(props) {
 		super(props);
@@ -82,4 +82,4 @@ function mapStateToProps(state) {
 
 }
 
-export default connect(mapStateToProps, { fetchPosts: fetchPosts })(ListShow);
+export default connect(mapStateToProps, { fetchPosts: fetchPosts })(ListItems);
