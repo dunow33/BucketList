@@ -11,7 +11,7 @@ import Signout from './components/auth/signout';
 import Signup from './components/auth/signup';
 import ListItem from './components/list/new-list-item';
 import ListsShow from './components/list/list-items';
-import RequireAuth from './components/auth/require-auth';
+import RequireAuth from './components/auth/require_auth';
 import reducers from './reducers';
 import { AUTH_USER } from './actions/types';
 
