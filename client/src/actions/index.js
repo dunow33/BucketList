@@ -77,10 +77,6 @@ export function fetchPosts() {
       });
   }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> module-24-fetchallclient
 export function authError(error) {
   return {
     type: AUTH_ERROR,
