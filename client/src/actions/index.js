@@ -38,7 +38,7 @@ const ROOT_URL = 'http://localhost:3000';
     export function signupUser({ email, password }) {
       return function(dispatch) {
         // Submit email/password to the server
-        axios.post('${ROOT_URL}/signup', { email, password })
+        axios.post(`${ROOT_URL}/signup`, { email, password })
           .then(response => {
             dispatch({type: AUTH_USER});
               
@@ -53,7 +53,7 @@ const ROOT_URL = 'http://localhost:3000';
 
     export function createPost(props) {
       return function(dispatch){
-        axios.post('${ROOT_URL}/newitem', { props }, config )
+        axios.post(`${ROOT_URL}/newitem`, { props }, config )
         .then(request => {
             dispatch({
               type: CREATE_POSTS,
@@ -67,7 +67,7 @@ const ROOT_URL = 'http://localhost:3000';
 
 export function fetchPosts() {
   return function(dispatch) {
-    axios.get('${ROOT_URL}/items', config)
+    axios.get(`${ROOT_URL}/items`, config)
       .then( (response) => {
         console.log("Response", response)
         dispatch({
