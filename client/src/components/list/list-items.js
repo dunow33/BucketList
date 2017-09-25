@@ -82,4 +82,8 @@ function mapStateToProps(state) {
 
 }
 
+<<<<<<< HEAD
 export default connect(mapStateToProps, { fetchPosts: fetchPosts })(ListShow);
+=======
+export default connect(mapStateToProps, { fetchPosts: fetchPosts })(ListShow);
+>>>>>>> module-24-fetchallclient

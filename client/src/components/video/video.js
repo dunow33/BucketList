@@ -40,9 +40,3 @@ class Video extends Component {
 }
 
 export default Video;
-// <VideoList videos={this.state.videos} /> is called passing a prop
-// the prop becomes a parameter in video-list.js and then we have access to the data 
-// called from the youtube API query
-// 2.  Take this component's generated HTML and put it in the DOM
-
-// ReactDOM.render(<App />, document.querySelector('.container'));
