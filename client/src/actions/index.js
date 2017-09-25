@@ -77,7 +77,6 @@ export function fetchPosts() {
       });
   }
 }
-
 export function authError(error) {
   return {
     type: AUTH_ERROR,
